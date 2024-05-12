@@ -1,0 +1,19 @@
+<h1>Hello from Rails!</h1>
+
+<p>
+    <%= @time %>
+</p>
+
+<p>
+    <%# Say <a href="/say/goodbye">Goodbye</a>! %>
+    <%= link_to "Goodbye", say_goodbye_path%>!
+    <%= link_to "Files", say_files_path%>!
+</p>
+
+<hr>
+<h2>Test</h2>
+<p>
+    <%= 1 + 2 %>
+    <%= "cow" + "boy" %>
+    <%= 1.hour.from_now.localtime %>
+</p>
