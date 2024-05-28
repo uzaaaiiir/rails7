@@ -46,4 +46,11 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to products_url
   end
+
+  test "should get products page" do
+    get products_url
+    assert_response :success
+
+    assert_select 'tbody', 1
+  end
 end
