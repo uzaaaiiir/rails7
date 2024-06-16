@@ -20,7 +20,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should get new" do
     get new_line_item_url
-    assert_response :success
+    assert_response :successcd 
   end
 
   test "should create line_item" do
